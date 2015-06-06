@@ -1,12 +1,12 @@
 # CultureInstaller
 An installer of custom cultures for Windows.
 
-# Example of usage
+### Example of usage
 
-For culture installation:
+Installation:
 >*CultureInstaller install -name en-DE -basedOnCulture en-US*
 
 >*CultureInstaller install -name en-DE -basedOnCulture en-US -basedOnRegion DE*
 
-For culture uninstallation:
+Uninstallation:
 >*CultureInstaller uninstall -name en-DE*
