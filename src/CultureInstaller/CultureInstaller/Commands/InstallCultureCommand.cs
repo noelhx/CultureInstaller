@@ -16,9 +16,9 @@ namespace CultureInstaller.Commands
         {
             IsCommand("install", "Installs a culture on the current system.");
 
-            HasRequiredOption("n|name=", "", v => _name = v);
-            HasRequiredOption("bc|basedOnCulture=", "", v => _basedOnCulture = v);
-            HasOption("br|basedOnRegion=", "", v => _basedOnRegion = v);
+            HasRequiredOption("n|name=", "the name of the culture to install", v => _name = v);
+            HasRequiredOption("c|basedOnCulture=", "the base culture for the installable culture", v => _basedOnCulture = v);
+            HasOption("r|basedOnRegion=", "the base region for the installable culture (optional)", v => _basedOnRegion = v);
         }
 
         public override int Run(string[] remainingArguments)

@@ -11,7 +11,7 @@ namespace CultureInstaller.Commands
         {
             IsCommand("uninstall", "Uninstalls a culture from the current system.");
 
-            HasRequiredOption("n|name=", "", v => _name = v);
+            HasRequiredOption("n|name=", "the name of the culture to uninstall", v => _name = v);
         }
 
         public override int Run(string[] remainingArguments)
