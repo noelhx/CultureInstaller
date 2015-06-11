@@ -6,7 +6,7 @@ An installer of custom cultures for Windows.
 Installation:
 >*CultureInstaller install -name en-DE -basedOnCulture en-US*
 
->*CultureInstaller install -name en-DE -basedOnCulture en-US -basedOnRegion DE*
+>*CultureInstaller install -name en-XX -basedOnCulture en-US -basedOnRegion US*
 
 Uninstallation:
 >*CultureInstaller uninstall -name en-DE*
